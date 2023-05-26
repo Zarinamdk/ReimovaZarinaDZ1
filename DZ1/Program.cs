@@ -67,9 +67,9 @@ namespace DZ1
             Console.WriteLine($"Осталось здоровья у игрока: {Math.Round(ph, 2)} ");
             double mh = mhealth - (pdamage / mprotection);
             Console.WriteLine($"Осталось здоровья у монстра: {Math.Round(mh,2)}");
-            double pd = (pdamage) / (mprotection);
+            double pd = (pdamage / mprotection);
             Console.WriteLine($"Урон нанесенный игроком: {Math.Round(pd,2)}");
-            double md = (mdamage) / (pprotection);
+            double md = (mdamage / pprotection);
             Console.WriteLine($"Урон нанесенный монстром: {Math.Round(md,2)}");
 
             Console.ReadKey();
